@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trackerP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BD8458">
+
+    <CheckBox
+        android:id="@+id/StardropTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Stardrops"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WalnutTick"
+        tools:text="Stardrops" />
+
+    <CheckBox
+        android:id="@+id/WalnutTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Walnuts"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FishTick"
+        tools:text="Walnuts" />
+
+    <CheckBox
+        android:id="@+id/FishTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Fishing"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CraftingTick"
+        tools:text="Fishing" />
+
+    <TextView
+        android:id="@+id/PerfectionTitle"
+        android:layout_width="214dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="Perfection"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:visibility="visible"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Perfection" />
+
+    <CheckBox
+        android:id="@+id/ShipTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="18dp"
+        android:text="Ship Everything"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PerfectionTitle" />
+
+    <CheckBox
+        android:id="@+id/ObeliskTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Obelisks"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShipTick"
+        tools:text="Obelisks" />
+
+    <CheckBox
+        android:id="@+id/GoldenClockTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Golden Clock"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ObeliskTick"
+        tools:text="Golden Clock" />
+
+    <CheckBox
+        android:id="@+id/MonsterTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Monster Slayer"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GoldenClockTick"
+        tools:text="Monster Slayer" />
+
+    <CheckBox
+        android:id="@+id/CraftingTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Crafting"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CookingTick"
+        tools:text="Crafting" />
+
+    <CheckBox
+        android:id="@+id/CookingTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Cooking"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LvlTick"
+        tools:text="Cooking" />
+
+    <CheckBox
+        android:id="@+id/LvlTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Farmer Levels"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FriendsTick"
+        tools:text="Farmer Levels" />
+
+    <CheckBox
+        android:id="@+id/FriendsTick"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Friendships"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MonsterTick"
+        tools:text="Friendships" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,14 +13,37 @@ class PickATracker : AppCompatActivity() {
 
         setContentView(R.layout.activity_pick_atracker)
 
-        val perfectionload : Button = findViewById(R.id.Perfection)
+        val perfectionLoad : Button = findViewById(R.id.Perfection)
 
-        perfectionload.setOnClickListener {
-            perfectiontracker()
+        perfectionLoad.setOnClickListener {
+            perfectionTracker()
         }
+
+        val communityLoad : Button = findViewById(R.id.Community)
+
+        communityLoad.setOnClickListener {
+            communityTracker()
+        }
+
+        val remixedcommunityLoad : Button = findViewById(R.id.communityremixed)
+
+        remixedcommunityLoad.setOnClickListener {
+            remixedCommunityTracker()
+        }
+
     }
-    private fun perfectiontracker () {
+    private fun perfectionTracker () {
         val intent = Intent (this, TrackerP::class.java )
+        startActivity(intent)
+    }
+
+    private fun communityTracker () {
+        val intent = Intent (this, TrackerCommunity::class.java )
+        startActivity(intent)
+    }
+
+    private fun remixedCommunityTracker () {
+        val intent = Intent (this, TrackerRemixed::class.java )
         startActivity(intent)
     }
 

@@ -13,13 +13,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val loadbutton : Button = findViewById(R.id.Load)
+        val loadButton : Button = findViewById(R.id.Load)
 
-        loadbutton.setOnClickListener {
-            loadclick()
+        loadButton.setOnClickListener {
+            loadClick()
         }
     }
-    private fun loadclick () {
+    private fun loadClick () {
         val intent = Intent (this, PickATracker::class.java )
         startActivity(intent)
     }

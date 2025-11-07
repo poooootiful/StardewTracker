@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StardewTracker">
         <activity
+            android:name=".TrackerRemixed"
+            android:exported="false" />
+        <activity
+            android:name=".TrackerCommunity"
+            android:exported="false" />
+        <activity
             android:name=".TrackerP"
             android:exported="false" />
         <activity

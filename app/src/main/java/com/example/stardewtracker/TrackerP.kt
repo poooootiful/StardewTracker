@@ -2,10 +2,7 @@ package com.example.stardewtracker
 
 import android.os.Bundle
 import android.widget.CheckBox
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.content.Context
 import android.content.Intent
 import android.widget.TextView
@@ -13,98 +10,96 @@ import android.net.Uri
 
 class TrackerP : AppCompatActivity() {
 
-    private lateinit var shiptick: CheckBox
-    private lateinit var obelisktick: CheckBox
-    private lateinit var goldenclocktick: CheckBox
-    private lateinit var monstertick: CheckBox
-    private lateinit var friendstick: CheckBox
-    private lateinit var lvltick: CheckBox
-    private lateinit var cookingtick: CheckBox
-    private lateinit var craftingtick: CheckBox
-    private lateinit var fishingtick: CheckBox
-    private lateinit var walnuttick: CheckBox
-    private lateinit var stardroptick: CheckBox
+    private lateinit var shipTick: CheckBox
+    private lateinit var obeliskTick: CheckBox
+    private lateinit var goldenClockTick: CheckBox
+    private lateinit var monsterTick: CheckBox
+    private lateinit var friendsTick: CheckBox
+    private lateinit var lvlTick: CheckBox
+    private lateinit var cookingTick: CheckBox
+    private lateinit var craftingTick: CheckBox
+    private lateinit var fishingTick: CheckBox
+    private lateinit var walnutTick: CheckBox
+    private lateinit var starDropTick: CheckBox
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tracker_p)
 
-        val perfectionlink : TextView =findViewById(R.id.PerfectionTitle)
-        perfectionlink.setOnClickListener {
-            val url= "https://stardewvalleywiki.com/Perfection"
+        val perfectionLink: TextView = findViewById(R.id.PerfectionTitle)
+        perfectionLink.setOnClickListener {
+            val url = "https://stardewvalleywiki.com/Perfection"
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(intent)
         }
 
+        shipTick = findViewById(R.id.ShipTick)
+        obeliskTick = findViewById(R.id.ObeliskTick)
+        goldenClockTick = findViewById(R.id.GoldenClockTick)
+        monsterTick = findViewById(R.id.MonsterTick)
+        friendsTick = findViewById(R.id.FriendsTick)
+        lvlTick = findViewById(R.id.LvlTick)
+        cookingTick = findViewById(R.id.CookingTick)
+        craftingTick = findViewById(R.id.CraftingTick)
+        fishingTick = findViewById(R.id.FishTick)
+        walnutTick = findViewById(R.id.WalnutTick)
+        starDropTick = findViewById(R.id.StardropTick)
 
-        shiptick = findViewById(R.id.ShipTick)
-        obelisktick = findViewById(R.id.ObeliskTick)
-        goldenclocktick = findViewById(R.id.GoldenClockTick)
-        monstertick = findViewById(R.id.MonsterTick)
-        friendstick = findViewById(R.id.FriendsTick)
-        lvltick = findViewById(R.id.LvlTick)
-        cookingtick = findViewById(R.id.CookingTick)
-        craftingtick = findViewById(R.id.CraftingTick)
-        fishingtick = findViewById(R.id.FishTick)
-        walnuttick = findViewById(R.id.WalnutTick)
-        stardroptick = findViewById(R.id.StardropTick)
+        val sharedPref = getSharedPreferences("PerfectionSaved", Context.MODE_PRIVATE)
+        shipTick.isChecked = sharedPref.getBoolean("shipTick_state", false)
+        obeliskTick.isChecked = sharedPref.getBoolean("obeliskTick_state", false)
+        goldenClockTick.isChecked = sharedPref.getBoolean("goldenClockTick_state", false)
+        monsterTick.isChecked = sharedPref.getBoolean("monsterTick_state", false)
+        friendsTick.isChecked = sharedPref.getBoolean("friendsTick_state", false)
+        lvlTick.isChecked = sharedPref.getBoolean("lvlTick_state", false)
+        cookingTick.isChecked = sharedPref.getBoolean("cookingTick_state", false)
+        craftingTick.isChecked = sharedPref.getBoolean("craftingTick_state", false)
+        fishingTick.isChecked = sharedPref.getBoolean("fishingTick_state", false)
+        walnutTick.isChecked = sharedPref.getBoolean("walnutTick_state", false)
+        starDropTick.isChecked = sharedPref.getBoolean("starDropTick_state", false)
 
-        val sharedpref = getSharedPreferences("Perfectionsaved", Context.MODE_PRIVATE)
-        shiptick.isChecked = sharedpref.getBoolean("shiptick_state", false)
-        obelisktick.isChecked = sharedpref.getBoolean("obelisktick_state", false)
-        goldenclocktick.isChecked = sharedpref.getBoolean("goldenclocktick_state", false)
-        monstertick.isChecked = sharedpref.getBoolean("monstertick_state", false)
-        friendstick.isChecked = sharedpref.getBoolean("friendstick_state", false)
-        lvltick.isChecked = sharedpref.getBoolean("lvltick_state", false)
-        cookingtick.isChecked = sharedpref.getBoolean("cookingtick_state", false)
-        craftingtick.isChecked = sharedpref.getBoolean("craftingtick_state", false)
-        fishingtick.isChecked = sharedpref.getBoolean("fishingtick_state", false)
-        walnuttick.isChecked = sharedpref.getBoolean("walnuttick_state", false)
-        stardroptick.isChecked = sharedpref.getBoolean("stardroptick_state", false)
-
-        shiptick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("shiptick_state", isChecked).apply()
+        shipTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("shipTick_state", isChecked).apply()
         }
 
-        obelisktick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("obelisktick_state", isChecked).apply()
+        obeliskTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("obeliskTick_state", isChecked).apply()
         }
 
-        goldenclocktick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("goldenclocktick_state", isChecked).apply()
+        goldenClockTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("goldenClockTick_state", isChecked).apply()
         }
 
-        monstertick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("monstertick_state", isChecked).apply()
+        monsterTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("monsterTick_state", isChecked).apply()
         }
 
-        friendstick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("friendstick_state", isChecked).apply()
+        friendsTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("friendsTick_state", isChecked).apply()
         }
 
-        lvltick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("lvltick_state", isChecked).apply()
+        lvlTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("lvlTick_state", isChecked).apply()
         }
 
-        cookingtick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("cookingtick_state", isChecked).apply()
+        cookingTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("cookingTick_state", isChecked).apply()
         }
 
-        craftingtick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("craftingtick_state", isChecked).apply()
+        craftingTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("craftingTick_state", isChecked).apply()
         }
 
-        fishingtick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("fishingtick_state", isChecked).apply()
+        fishingTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("fishingTick_state", isChecked).apply()
         }
 
-        walnuttick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("walnuttick_state", isChecked).apply()
+        walnutTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("walnutTick_state", isChecked).apply()
         }
 
-        stardroptick.setOnCheckedChangeListener { _, isChecked ->
-            sharedpref.edit().putBoolean("stardroptick_state", isChecked).apply()
+        starDropTick.setOnCheckedChangeListener { _, isChecked ->
+            sharedPref.edit().putBoolean("starDropTick_state", isChecked).apply()
         }
-
     }
 }

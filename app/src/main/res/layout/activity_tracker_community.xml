@@ -1,0 +1,1706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:background="#BD8458"
+    tools:context=".TrackerCommunity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/CommunityCenterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Community Center"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold|italic" />
+
+            <!---->
+            <TextView
+                android:id="@+id/SpringForagingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="Spring Foraging"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/WildhorseradsishTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Wild Horseradish"/>
+
+            <CheckBox
+                android:id="@+id/DaffodilTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Daffodil"/>
+
+            <CheckBox
+                android:id="@+id/LeekTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="2dp"
+                android:text="Leek"/>
+
+            <CheckBox
+                android:id="@+id/DandelionTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Dandelion"/>
+
+            <TextView
+                android:id="@+id/SpringForagingInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Look around during spring"
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/SummerForagingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="Summer Foraging"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/SweetpeaTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Sweet Pea"/>
+
+            <CheckBox
+                android:id="@+id/SpiceberryTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="-48dp"
+                android:enabled="false"
+                android:text="Spice Berry"/>
+
+            <CheckBox
+                android:id="@+id/GrapeTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="-48dp"
+                android:text="Grape"/>
+
+            <TextView
+                android:id="@+id/SummerForagingInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Look around during summer"
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/FallForagingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="Fall Foraging"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/BlackberryTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Blackberry"/>
+
+            <CheckBox
+                android:id="@+id/HazelnutTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Hazelnut"/>
+
+            <CheckBox
+                android:id="@+id/CmushroomTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="2dp"
+                android:text="Common Mushroom"/>
+
+            <CheckBox
+                android:id="@+id/WildplumTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Wild Plum"/>
+
+            <TextView
+                android:id="@+id/FallForagingInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Look around during fall"
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/WinterForagingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="Winter Foraging"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/SnowyamTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Snow Yam"/>
+
+            <CheckBox
+                android:id="@+id/WinterrootTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Winter Root"/>
+
+            <CheckBox
+                android:id="@+id/CrystalfruitTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="2dp"
+                android:text="Crystal Fruit"/>
+
+            <CheckBox
+                android:id="@+id/CrocusTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Crocus"/>
+
+            <TextView
+                android:id="@+id/WinterForagingInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Look around, Till Soil and find in mines"
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/ConstructionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="Construction"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/WoodTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Wood (99)"/>
+
+            <CheckBox
+                android:id="@+id/Wood2Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Wood (99)"/>
+
+            <CheckBox
+                android:id="@+id/StoneTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Stone (99)"/>
+
+            <CheckBox
+                android:id="@+id/HardwoodTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Hardwood (10)"/>
+
+            <TextView
+                android:id="@+id/ConstructionInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Chop trere and stumps and mine rocks (Stumps require copper axe)"
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!--Construction End-->
+
+            <!---->
+            <TextView
+                android:id="@+id/ExoticForagingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exotic Foraging"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/CoconutTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Coconut"
+                />
+
+            <CheckBox
+                android:id="@+id/CactusFruitTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Cactus Fruit"
+                />
+
+            <CheckBox
+                android:id="@+id/CaveCarrotTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Cave Carrot"
+                />
+
+            <CheckBox
+                android:id="@+id/RedMushroomTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Red Mushroom"
+                />
+
+            <CheckBox
+                android:id="@+id/PurpleMushroomTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Purple Mushroom"
+                />
+
+            <CheckBox
+                android:id="@+id/MapleSyrupTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Maple Syrup"
+                />
+
+            <CheckBox
+                android:id="@+id/OakResinTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Oak Resin"
+                />
+
+            <CheckBox
+                android:id="@+id/PineTarTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="-48dp"
+                android:text="Pine Tar"
+                />
+
+            <CheckBox
+                android:id="@+id/MorelTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Morel"
+                />
+
+            <TextView
+                android:id="@+id/ExoticForagingInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exotic Foraging Info"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <TextView
+                android:id="@+id/SpringCropsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spring Crops"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/ParsnipTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Parsnip"
+                />
+
+            <CheckBox
+                android:id="@+id/GreenBeanTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Green Bean"
+                />
+
+            <CheckBox
+                android:id="@+id/CauliflowerTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Cauliflower"
+                />
+
+            <CheckBox
+                android:id="@+id/PotatoTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Potato"
+                />
+
+            <TextView
+                android:id="@+id/SpringCropsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spring Crops Info"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/SummerCropsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summer Crops"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/TomatoTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Tomato"
+                />
+
+            <CheckBox
+                android:id="@+id/HotPepperTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Hot pepper"
+                />
+
+            <CheckBox
+                android:id="@+id/BlueberryTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Blueberry"
+                />
+
+            <CheckBox
+                android:id="@+id/MelonTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Melon"
+                />
+
+            <TextView
+                android:id="@+id/SummerCropsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summer Crops Info"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/FallCropsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fall Crops"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/CornTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Corn"
+                />
+
+            <CheckBox
+                android:id="@+id/EggplantTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Eggplant"
+                />
+
+            <CheckBox
+                android:id="@+id/PumpkinTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Pumpkin"
+                />
+
+            <CheckBox
+                android:id="@+id/YamTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Yam"
+                />
+
+            <TextView
+                android:id="@+id/FallCropsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fall Crops Info"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/QualityCropsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quality Crops"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/Parsnip5Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Parsnip (5)"
+                />
+
+            <CheckBox
+                android:id="@+id/Melon5Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Melon (5)"
+                />
+
+            <CheckBox
+                android:id="@+id/Pumpkin5Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Pumpkin (5)"
+                />
+
+            <CheckBox
+                android:id="@+id/Corn5Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Corn (5)"
+                />
+
+            <TextView
+                android:id="@+id/QualityCropsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Only 3 neeeded. Grow gold quality crops from differant seasons"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/AnimalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animal"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/LargeMilkTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Large Milk"
+                />
+
+            <CheckBox
+                android:id="@+id/LargeEggBrownTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Large Egg Brown"
+                />
+
+            <CheckBox
+                android:id="@+id/LargeEggWhiteTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Large Egg White"
+                />
+
+            <CheckBox
+                android:id="@+id/LargeGoatMilkTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Large Goat Milk"
+                />
+
+            <CheckBox
+                android:id="@+id/WoolTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Wool"
+                />
+
+            <CheckBox
+                android:id="@+id/DuckEggTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="-48dp"
+                android:text="Duck Egg"
+                />
+
+            <CheckBox
+                android:id="@+id/RDuckEggTick2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Duck Egg"
+                />
+
+            <TextView
+                android:id="@+id/AnimalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Onyl 5 needed. Barn and a cow (7.5k,350W,150S), Coop and 2 chickens (5.2k, 300W, 100S), Big coop and duck (11.2k, 400W, 150S), Big barn ang goat (16k, 450W, 200S)"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!--Artisan start-->
+            <TextView
+                android:id="@+id/ArtisanTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="Artisan"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/TruffleOilTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Truffle Oil"/>
+
+            <CheckBox
+                android:id="@+id/ClothTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Cloth"/>
+
+            <CheckBox
+                android:id="@+id/GoatCheeseTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Goat Cheese"/>
+
+            <CheckBox
+                android:id="@+id/CheeseTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Cheese"/>
+
+            <CheckBox
+                android:id="@+id/HoneyTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Honey"/>
+
+            <CheckBox
+                android:id="@+id/JellyTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Jelly"/>
+
+            <CheckBox
+                android:id="@+id/AppleTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Apple"/>
+
+            <CheckBox
+                android:id="@+id/ApricotTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Apricot"/>
+
+            <CheckBox
+                android:id="@+id/OrangeTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Orange"/>
+
+            <CheckBox
+                android:id="@+id/PeachTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Peach"/>
+
+            <CheckBox
+                android:id="@+id/PomegranateTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Pomegranate"/>
+
+            <CheckBox
+                android:id="@+id/CherryTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Cherry"/>
+
+            <TextView
+                android:id="@+id/ArtisanInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Only 6 Needed!. Made in different machines and Gathered from fruit trees"
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!--Artisan end-->
+
+            <!--River Fish start-->
+            <TextView
+                android:id="@+id/RiverFishTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="River Fish"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/SunfishTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Sunfish"/>
+
+            <CheckBox
+                android:id="@+id/CatfishTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Catfish"/>
+
+            <CheckBox
+                android:id="@+id/ShadTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Shad"/>
+
+            <CheckBox
+                android:id="@+id/TigerTroutTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Tiger Trout"/>
+
+            <TextView
+                android:id="@+id/RiverFishInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Cought in rivers. all between 6am and 7pm. all execpt tiger trout in spring. sunfish only on sunny days, catfish and shad only on rainy days, tiger trout in fall or winter any weather "
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!--River Fish End-->
+
+            <!--Lake Fish start-->
+            <TextView
+                android:id="@+id/LakeFishTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="Lake Fish"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/LargemouthBassTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Largemouth Bass"/>
+
+            <CheckBox
+                android:id="@+id/CarpTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Carp"/>
+
+            <CheckBox
+                android:id="@+id/BullheadTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Bullhead"/>
+
+            <CheckBox
+                android:id="@+id/SturgeonTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Sturgeon"/>
+
+            <TextView
+                android:id="@+id/LakeFishInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Cought in lake, All between 6am-7pm, most in all seasons and weather except sturgeon that is onlu in summer or winter"
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/OceanFishTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:text="Ocean Fish"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/SardineTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Sardine"/>
+
+            <CheckBox
+                android:id="@+id/TunaTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Tuna"/>
+
+            <CheckBox
+                android:id="@+id/RedSnapperTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Red Snapper"/>
+
+            <CheckBox
+                android:id="@+id/TilapiaTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Tilapia"/>
+
+            <TextView
+                android:id="@+id/OceanFishInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Cought in ocean, All 6am-7pm, Sardine all except summer any weather, the rest can all be cough in summer but red snapper has to rain"
+                android:textAlignment="center"
+                android:textSize="14dp"/>
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/NightFishTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Night Fish"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/WalleyeTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Walleye"
+                />
+
+            <CheckBox
+                android:id="@+id/BreamTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="-48dp"
+                android:text="Bream"
+                />
+
+            <CheckBox
+                android:id="@+id/EelTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Eel"
+                />
+
+            <TextView
+                android:id="@+id/NightFishInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cought in river or lake (Walleye), River (Bream), Ocean (Eel), All 6pm to 2am, walleye and Eel has to rain, Walleye is fall or winter, Eel is spring or fall and Bream all seasons "
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/CrabPotTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crab pot"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/LobsterTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Lobster"
+                />
+
+            <CheckBox
+                android:id="@+id/CrayfishTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Crayfish"
+                />
+
+            <CheckBox
+                android:id="@+id/CrabTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Crab"
+                />
+
+            <CheckBox
+                android:id="@+id/CockleTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Cockle"
+                />
+
+            <CheckBox
+                android:id="@+id/MusselTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Mussel"
+                />
+
+            <CheckBox
+                android:id="@+id/ShrimpTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Shrimp"
+                />
+
+            <CheckBox
+                android:id="@+id/SnailTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Snail"
+                />
+
+            <CheckBox
+                android:id="@+id/PeriwinkleTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Periwinkle"
+                />
+
+            <CheckBox
+                android:id="@+id/OysterTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Oyster"
+                />
+
+            <CheckBox
+                android:id="@+id/ClamTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Clam"
+                />
+
+            <TextView
+                android:id="@+id/CrabPotInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Only 5 Needed! Crab pot with bait in Ocean or freshwater (you can also get enough tru foraging on the beach)"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/SpecialtyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specialty"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/PufferfishTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Pufferfish"
+                />
+
+            <CheckBox
+                android:id="@+id/GhostfishTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Ghostfish"
+                />
+
+            <CheckBox
+                android:id="@+id/SandfishTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Sandfish"
+                />
+
+            <CheckBox
+                android:id="@+id/WoodskipTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Woodskip"
+                />
+
+            <TextView
+                android:id="@+id/SpecialtyInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specialty Info"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/BlackSmithTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BlackSmith"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/CopperBarTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Copper Bar"
+                />
+
+            <CheckBox
+                android:id="@+id/IronBarTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="-48dp"
+                android:text="Iron Bar"
+                />
+
+            <CheckBox
+                android:id="@+id/GoldBarTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Gold Bar"
+                />
+
+            <TextView
+                android:id="@+id/BlackSmithInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Smelt 5 of a ore to make a bar do not forget the coal"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/GeologistTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Geologist"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/QuartzTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Quartz"
+                />
+
+            <CheckBox
+                android:id="@+id/EarthCrystalTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Earth Crystal"
+                />
+
+            <CheckBox
+                android:id="@+id/FrozenTearTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Frozen Tear"
+                />
+
+            <CheckBox
+                android:id="@+id/FireQuartzTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Fire Quartz"
+                />
+
+            <TextView
+                android:id="@+id/GeologistInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Found on different floor of the mine. Eath crystal (1-39), Frozer tear (40-79), Fire quartz (80-120), Quartz all floors"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/AdventurerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adventurer"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/Slime99Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Slime (99)"
+                />
+
+            <CheckBox
+                android:id="@+id/BatWing10Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Bat Wing (10)"
+                />
+
+            <CheckBox
+                android:id="@+id/SolarEssenceTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Solar Essence"
+                />
+
+            <CheckBox
+                android:id="@+id/VoidEssenceTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Void Essence"
+                />
+
+            <TextView
+                android:id="@+id/AdventurerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Only 2 Needed, Killing slime, Bats, Ghost or Shadow thing in the mines"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/ChefTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chef"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/ChefMapleSyrupTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Maple Syrup" />
+
+            <CheckBox
+                android:id="@+id/FiddleheadFernTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-48dp"
+                android:text="Fiddlehead fern" />
+
+            <CheckBox
+                android:id="@+id/TruffleTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Truffle" />
+
+            <CheckBox
+                android:id="@+id/PoppyTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-48dp"
+                android:text="Poppy" />
+
+            <CheckBox
+                android:id="@+id/MakiRollTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Maki Roll" />
+
+            <CheckBox
+                android:id="@+id/FriedEggTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-48dp"
+                android:text="Fried Egg" />
+
+            <TextView
+                android:id="@+id/ChefInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tree tapping, Summer foraging in secret woods (steel axes needed), Deluxe barn and pig (25k, 550W, 300S), Summer crop, House uppgrade (10k,400W)"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/DyeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dye"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/DyeRedMushroomTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Red Mushroom"
+                />
+
+            <CheckBox
+                android:id="@+id/SeaUrchinTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Sea Urchin"
+                />
+
+            <CheckBox
+                android:id="@+id/SunflowerTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Sunflower"
+                />
+
+            <CheckBox
+                android:id="@+id/DuckFeatherTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Duck Feather"
+                />
+
+            <CheckBox
+                android:id="@+id/AquamarineTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Aquamarine" />
+
+            <CheckBox
+                android:id="@+id/RedCabbageTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Red Cabbage" />
+
+            <TextView
+                android:id="@+id/DyeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mines, Beach foraging, Summer/fall Crop, Ducks, Summer crops in year 2+ (traveling cart before year 2 start is also posible)"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/FieldTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Field"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/FieldPurpleMushroomTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:text="Purple Mushroom" />
+
+            <CheckBox
+                android:id="@+id/NautilusTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="-48dp"
+                android:text="Nautilus" />
+
+            <CheckBox
+                android:id="@+id/ChubTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:text="Chub" />
+
+            <CheckBox
+                android:id="@+id/FrozenGeodeTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="-48dp"
+                android:text="Frozen Geode" />
+
+            <TextView
+                android:id="@+id/FieldInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mines, Winter beach foraging, Mountain lake"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/FodderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fodder"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/Wheat10Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Wheat (10)"
+                />
+
+            <CheckBox
+                android:id="@+id/Hay10Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="-48dp"
+                android:text="Hay (10)"
+                />
+
+            <CheckBox
+                android:id="@+id/Apple3Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="-48dp"
+                android:text="Apple (3)" />
+
+            <TextView
+                android:id="@+id/FodderInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fruit trees that bear fruit in fall, Summer/fall crop (hay as a secondary drop)"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+            <!---->
+            <TextView
+                android:id="@+id/EnchanterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enchanter"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <CheckBox
+                android:id="@+id/EnchanterOakResinTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Oak Resin"
+                />
+
+            <CheckBox
+                android:id="@+id/WineTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Wine"
+                />
+
+            <CheckBox
+                android:id="@+id/RabbitsFootTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="Rabbit's foot"
+                />
+
+            <CheckBox
+                android:id="@+id/EnchanterPomegranateTick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="Pomegranate"
+                />
+
+            <TextView
+                android:id="@+id/EnchanterInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tree tapping, Keg with fruit, Fruit treee tha bear fruit in fall, Deluxe coop and rabbit (20k, 500W, 200S)"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                />
+            <!---->
+
+            <!---->
+            <TextView
+                android:id="@+id/VaultTitle"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                android:text="Vault"
+                android:textAlignment="center"
+                android:textSize="24sp"/>
+
+            <CheckBox
+                android:id="@+id/G2500Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="2500 Gold"/>
+
+            <CheckBox
+                android:id="@+id/G5000Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="5000 Gold"/>
+
+            <CheckBox
+                android:id="@+id/G10000Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:text="10000 Gold"/>
+
+            <CheckBox
+                android:id="@+id/G25000Tick"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="-48dp"
+                android:text="25000 Gold"/>
+
+            <TextView
+                android:id="@+id/VaultInfo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="It's a lot of gold"
+                android:textAlignment="center"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

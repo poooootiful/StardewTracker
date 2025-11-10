@@ -660,22 +660,13 @@
                 android:id="@+id/WoolTick"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="70dp"
                 android:layout_marginTop="5dp"
                 android:text="Wool"
                 />
 
             <CheckBox
                 android:id="@+id/DuckEggTick"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="-48dp"
-                android:text="Duck Egg"
-                />
-
-            <CheckBox
-                android:id="@+id/RDuckEggTick2"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginStart="230dp"

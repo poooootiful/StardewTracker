@@ -46,6 +46,7 @@ class TrackerP : AppCompatActivity() {
         starDropTick = findViewById(R.id.StardropTick)
 
         val sharedPref = getSharedPreferences("PerfectionSaved", Context.MODE_PRIVATE)
+
         shipTick.isChecked = sharedPref.getBoolean("shipTick_state", false)
         obeliskTick.isChecked = sharedPref.getBoolean("obeliskTick_state", false)
         goldenClockTick.isChecked = sharedPref.getBoolean("goldenClockTick_state", false)

@@ -523,7 +523,7 @@ class TrackerRemixed : AppCompatActivity() {
         CookieTick.setOnCheckedChangeListener { _, isChecked -> sharedPref.edit().putBoolean("CookieTick_state", isChecked).apply() }
         AncientDollTick.setOnCheckedChangeListener { _, isChecked -> sharedPref.edit().putBoolean("AncientDollTick_state", isChecked).apply() }
         IceCreamTick.setOnCheckedChangeListener { _, isChecked -> sharedPref.edit().putBoolean("IceCreamTick_state", isChecked).apply() }
-        Salmonberry50Tick.setOnCheckedChangeListener { _, isChecked -> sharedPref.edit().putBoolean("Salmonberry50Tick_state
+        Salmonberry50Tick.setOnCheckedChangeListener { _, isChecked -> sharedPref.edit().putBoolean("Salmonberry50Tick_state",isChecked).apply()}
 
 
         }
